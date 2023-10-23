@@ -1,5 +1,5 @@
 <h1 align="center">MAIA - MyApp IA</h1>
-<h4 align="center">Reconnaissance et synthèse vocale, reconnaissance d'images et d'objets</h4>
+<h4 align="center">Vocal recognition and synthesis, object recognition</h4>
 
 ## Status
 ![License](https://img.shields.io/badge/license-GNU-blue.svg)

@@ -1,15 +1,17 @@
-<h1 align="center">MAIA - MyApp IA</h1>
-<h4 align="center">Vocal recognition and synthesis, object recognition</h4>
+<h1 align="center">MAIA - MyApp AI - v2</h1>
+<h4 align="center">Object recognition module and voice recognition/text-to-speech synthesis</h4>
 
 ## Status
 ![License](https://img.shields.io/badge/license-GNU-blue.svg)
 ![Supported Versions](https://img.shields.io/badge/python-3.9.*-blue.svg)
-
+![Versions](https://img.shields.io/badge/version-v2-green.svg)
 
 MAIA (MyApp Intelligence Artificial) is a Python project that enables you to create your own voice-controlled assistant using various Python libraries and modules.
 
+
 ## Table of Contents
 - [Introduction](#introduction)
+- [Description](#description)
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -27,6 +29,42 @@ MAIA (MyApp Intelligence Artificial) is a Python project that enables you to cre
 ## Introduction
 
 MAIA (MyApp Intelligence Artificial) is designed to provide a foundation for building your own voice-controlled assistant with Python. It uses various libraries and modules for speech recognition, text-to-speech synthesis, and custom functionality.
+
+
+
+## Description
+
+- The program is designed to run on an x86-64 architecture with an internet connection.
+
+### Files and Folders
+![Contenu archive](img-md/1.png)
+**In the 'voc-sounds' folder :**
+- `advanced-mode-recognize.py`: Advanced mode recognition.
+- `keywords`: Keywords for voice commands.
+- `no-co.gram`: Grammar file for no connection.
+- `no-co.dict`: Dictionary file for no connection.
+- `no-connection-recognition.py`: No connection recognition code.
+- `no-connection-speak.py`: No connection speech code.
+- `functions.py`: User-defined functions.
+- `output.mp3`: MP3 output.
+- `output.wav`: WAV output.
+- `parole.mp3`: MP3 speech.
+- `user-mode.py`: User mode code.
+
+
+
+
+### TODO
+- [x] voc-sounds module tests - **ok**
+- [-] Camera module integration. **ko**
+
+## Credits
+
+This program uses the following Python modules:
+
+- [SpeechRecognition](https://github.com/Uberi/speech_recognition)
+- [pytssx3](https://github.com/nateshmbhat/pyttsx3)
+
 
 ## Features
 
@@ -49,7 +87,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. Download and unzip the MAIA package:
 
-    [MAIA Download](https://github.com/dadflip/maia/releases/tag/v1.0.0)
+    [MAIA Download](https://github.com/dadflip/maia/releases/tag/v2.0.0)
 
 2. Install the required Python packages by running the following command in your terminal:
 
@@ -73,7 +111,7 @@ To run the voice-controlled assistant in basic mode, follow these steps:
 2. Run the basic assistant program:
 
     ```bash
-    python3 input_voice.py
+    python3 launch
     ```
 
 3. Follow the on-screen instructions to interact with the assistant using voice commands.
@@ -112,7 +150,7 @@ To extend the functionality of your assistant, you can create custom functions i
 
 ## Troubleshooting
 
-If you encounter any issues while using the assistant, you can check the "Troubleshooting" section of the [README.md](README.md) file for guidance.
+If you encounter any issues while using the assistant, you can check the Troubleshooting section of the **README.md** file for guidance.
 
 ## Contributing
 
@@ -124,11 +162,8 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 4. Submit a pull request.
 
 ## License
-
-This project is licensed under the GNU General License - see the [LICENSE.md](LICENSE) file for details.
-
----
+This project is licensed under the GNU General License - see the **LICENSE** file for details.
 
 **Note**: Make sure to replace `/path/to/maia` with your actual project directory path.
 
-Feel free to add more details, sections, or customize this template further to suit your project's needs. This README template covers the essential sections, but you can expand it with additional information as required.
+Feel free to add more details, sections, or customize this template further to suit your project's needs. This **README** template covers the essential sections, but you can expand it with additional information as required.

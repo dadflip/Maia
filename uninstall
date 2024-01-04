@@ -1,0 +1,44 @@
+#!/bin/bash
+
+
+sudo apt uninstall zenity espeak
+
+# List of Python packages to uninstall
+packages=(
+    "gtts"
+    "playsound"
+    "pyttsx3"
+    "speechrecognition"
+    "webbrowser"
+    "webbrowser"
+    "csv"
+    "os"
+    "subprocess"
+    "time"
+    "geopy"
+    "cython"
+    "nms"
+    "imutils"
+    "opencv-python-headless"
+    "opencv-python"
+    "scipy"
+    "numpy"
+    "webcolors"
+    "requests"
+    "pyttsx3"
+    "pocketsphinx"
+)
+
+# Loop through the packages and uninstall them using pip
+for package in "${packages[@]}"; do
+    if python3.9 -c "import $package" &> /dev/null; then
+        echo "Uninstalling $package..."
+        pip uninstall -y "$package"
+    else
+        echo "$package is not installed."
+    fi
+done
+
+echo "All specified packages are uninstalled."
+
+# Optionally, you can add more packages to uninstall.

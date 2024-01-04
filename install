@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Check if Python 3.9 is installed, and if not, install it
+if ! command -v python3.9 &> /dev/null; then
+    echo "Python 3.9 is not found. Installing Python 3.9..."
+    # Replace this with the appropriate command for your system
+    # For example, on a Debian-based system, you can use:
+    sudo apt update
+    sudo apt install python3.9
+fi
+
+sudo apt install zenity espeak
+sudo apt-get install sphinxbase-utils
+sudo apt-get install pocketsphinx-utils
+sudo apt install pocketsphinx
+
+
+# List of Python packages to install
+packages=(
+    "gtts"
+    "playsound"
+    "pyttsx3"
+    "speechrecognition"
+    "webbrowser"
+    "webbrowser"
+    "csv"
+    "os"
+    "subprocess"
+    "time"
+    "geopy"
+    "cython"
+    "nms"
+    "imutils"
+    "opencv-python-headless"
+    "opencv-python"
+    "scipy"
+    "numpy"
+    "webcolors"
+    "requests"
+    "pyttsx3"
+    "pocketsphinx"
+)
+
+# Loop through the packages and install them using pip
+for package in "${packages[@]}"; do
+    if ! python3.9 -c "import $package" &> /dev/null; then
+        echo "Installing $package..."
+        pip install "$package"
+    else
+        echo "$package is already installed."
+    fi
+done
+
+echo "All required packages are installed."
+
+# Optionally, you can install other modules as needed for your project.

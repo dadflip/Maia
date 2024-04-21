@@ -6,7 +6,7 @@
 ![Supported Versions](https://img.shields.io/badge/python-3.9.*-blue.svg)
 ![Versions](https://img.shields.io/badge/version-v2-green.svg)
 
-MAIA (MyApp Intelligence Artificial) is a Python project that enables you to create your own voice-controlled assistant using various Python libraries and modules.
+MAIA (MyApp Intelligence Artificielle) is a Python project that enables you to create your own voice-controlled assistant using various Python libraries and modules.
 
 
 ## Table of Contents
